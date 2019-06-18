@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/elsyser/Documents/9,16/kurva.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>DIY Database</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./DIY Database_files/w3.css">
+<link rel="stylesheet" href="./DIY Database_files/css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head><body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>DIY<br>Database</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="file:///C:/Users/elsyser/Documents/9,16/kurva.html#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="file:///C:/Users/elsyser/Documents/9,16/kurva.html#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="file:///C:/Users/elsyser/Documents/9,16/kurva.html#developers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>  
+    <a href="file:///C:/Users/elsyser/Documents/9,16/kurva.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>DIYSh</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="browse">
+    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Newest contraptions</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="file:///C:/Users/elsyser/Documents/9,16/labpsu.jpg" style="width:100%" onclick="onClick(this)" alt="">
+      <img src="file:///C:/Users/elsyser/Documents/9,16/pcbcorel.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="file:///C:/Users/elsyser/Documents/9,16/soldering.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+   
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display=&#39;none&#39;">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a site that's focused on letting you know how to make really cool contraptions.</p>
+    <p>At the moment the site is under development so the most you will see is just redirections to other sites.
+    </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="Developers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Developers</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world. 8Г</p>
+    <p>
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-red">
+        <img src="file:///C:/Users/elsyser/Documents/9,16/mitiu.jpg" alt="Димитри" style="width:100%">
+        <div class="w3-container">
+          <h3>Димитър Владимиров</h3>
+          <p class="w3-opacity">CEO</p>
+          <p>Ученик в ТУЕС и любителски фотограф.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-red">
+        <img src="file:///C:/Users/elsyser/Documents/9,16/martiu.jpg" alt="Мартини" style="width:100%">
+        <div class="w3-container">
+          <h3>Мартин Тодоров</h3>
+          <p class="w3-opacity">co-CEO</p>
+          <p>Ученик в ТУЕС и заварчик.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-red">
+        <img src="file:///C:/Users/elsyser/Documents/9,16/stefiu.jpg" alt="Стефани" style="width:100%">
+        <div class="w3-container">
+          <h3>Стефан Касамаков</h3>
+          <p class="w3-opacity">co-CEO</p>
+          <p>Ученик в ТУЕС.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p></p>
+    <form action="file:///C:/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required="">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required="">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required="">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+</div></body></html>
